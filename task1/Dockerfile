@@ -20,10 +20,10 @@ RUN pip3 install flask
 WORKDIR /app
 
 # Copy the python file to the docker image
-COPY api.py .
+COPY ./api.py /app
 
 # Expose the port 5252
 EXPOSE 5252
 
 # Flask server launch
-CMD ["flask", "--app", "api", "run"]
+CMD ["python3", "api.py"]
