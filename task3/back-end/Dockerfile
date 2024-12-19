@@ -28,4 +28,4 @@ COPY api.py .
 EXPOSE 5252
 
 # Flask server launch
-CMD ["flask", "--app", "api", "run"]
+CMD ["python3", "api.py"]
