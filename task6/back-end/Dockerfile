@@ -5,7 +5,7 @@ FROM ubuntu:latest
 RUN apt-get update
 
 # Update installed software
-RUN apt-get update -y
+RUN apt-get upgrade -y
 
 # Install Python3, python3-pip and flask
 RUN apt-get install -y python3
@@ -22,7 +22,7 @@ RUN pip3 install flask-cors
 WORKDIR /app
 
 # Copy the python file to the docker image
-COPY api.py .
+COPY ./api.py /app/api.py
 
 # Expose the port 5252
 EXPOSE 5252
