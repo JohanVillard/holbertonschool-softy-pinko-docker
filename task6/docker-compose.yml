@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     image: front-end
     ports:
-      - "9000"
+      - "9000:9000"
     depends_on:
       back-end:
         condition: service_started
@@ -16,7 +16,7 @@ services:
       dockerfile: Dockerfile
     image: back-end
     ports:
-      - "5252"
+      - "5252:5252"
     environment:
       - FLASK_RUN_HOST=0.0.0.0
       - FLASK_RUN_PORT=5252
