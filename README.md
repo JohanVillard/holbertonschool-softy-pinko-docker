@@ -16,8 +16,8 @@ Avant de déployer l'application, assurez-vous d'avoir les éléments suivants i
    Clonez le dépôt Git contenant l'application :
 
    ```bash
-   git clone https://votre-repository-url.git
-   cd votre-dossier-de-projet
+   git clone https://github.com/JohanVillard/holbertonschool-softy-pinko-docker.git 
+   cd task6
 
 2. **Construire et démarrer les conteneurs**
    Utilisez Docker Compose pour construire et démarrer tous les services définis dans le fichier docker-compose.yml :
